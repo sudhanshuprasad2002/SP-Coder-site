@@ -1,11 +1,177 @@
-@media only screen and (min-width: 360px) {
+@media (max-width: 1005px) {
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-box a {
+    margin: 10px 30px 18px 0;
+  }
+}
+
+@media (max-width: 810px) {
+  .text-box h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  .mobile {
+    height: 310px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4e1c7d;
+    z-index: 2;
+    padding-bottom: 20px;
+  }
+
+  .ham {
+    position: absolute;
+    right: 25px;
+    top: 43px;
+    z-index: 3;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  nav img {
+    width: 10rem;
+    padding-top: 50px;
+  }
+
+  .contact a {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+  }
+
+  .contact a:hover {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+  }
+
+  .Textcontent {
+    padding-bottom: 45px;
+  }
+  nav {
+    padding: 0;
+  }
+  .text-box h1 {
+    font-size: 6.5rem;
+  }
+
+  .text-box h3 {
+    width: 85%;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+
+  .text-box p {
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 541px) {
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
+  .social-icons {
+    display: block;
+    bottom: 8%;
+  }
+  .text-box h3 {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .text-box a {
+    padding: 0.8rem 1rem;
+    margin: 10px 0;
+  }
+
+  .text-box h1 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    margin-left: -0.4rem;
+  }
+
+  .text-box p {
+    line-height: 90px;
+  }
+
+  .ham {
+    right: 25px;
+    top: 46px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 25px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 376px) {
   .text-box {
-    font-size: 90%;
+    font-size: 80%;
+  }
+
+  .text-box h1 {
+    font-size: 3.5rem;
   }
   .text-box a {
     margin-bottom: 1rem;
   }
   #L1 #L2 #L3 {
     font-size: 10%;
+  }
+}
+
+@media (max-width: 328px) {
+  .text-box h1 {
+    font-size: 3.2rem;
+  }
+
+  .text-box p {
+    font-size: 3.1rem;
+  }
+  .text-box {
+    font-size: 70%;
   }
 }

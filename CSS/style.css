@@ -21,10 +21,10 @@ nav {
   padding: 2rem 0;
 }
 
-.logo {
+nav img {
   width: 10rem;
   cursor: pointer;
-  /* padding-top: 20px; */
+  z-index: 3;
 }
 
 nav ul {
@@ -56,8 +56,28 @@ nav ul li a::after {
   transition: width 0.3s;
 }
 nav ul li a:hover::after {
-  width: 60%;
+  width: 90%;
 }
+
+.contact a {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.contact a:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s all ease-in-out;
+  color: rgb(0, 0, 0);
+  width: 0;
+}
+
+.contact a:hover::after {
+  width: 0;
+}
+
 .text-box {
   color: #fff;
   position: absolute;
@@ -66,9 +86,6 @@ nav ul li a:hover::after {
 .text-box p {
   font-size: 3.2rem;
   font-weight: 600;
-  /* New Line */
-  /* flex-wrap: wrap; */
-  /* width: 60%; */
 }
 .text-box h1 {
   font-size: 9rem;
@@ -94,15 +111,16 @@ nav ul li a:hover::after {
 .text-box h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  /* new lines */
-  /* flex-wrap: wrap; */
-  /* width: 95%; */
 }
 .row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+.btn {
+  display: flex;
 }
 .text-box a {
   color: #fff;
@@ -117,8 +135,10 @@ nav ul li a:hover::after {
   font-size: 2rem;
   line-height: 1rem;
   margin-left: 0.3rem;
-  /* new lines */
-  /* flex-wrap: wrap; */
+}
+.arrow01 {
+  font-size: 1.4rem;
+  line-height: 1rem;
 }
 .social-icons {
   position: absolute;

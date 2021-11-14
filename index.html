@@ -17,7 +17,7 @@
     <div class="container">
       <nav>
         <img src="/Assets/SP-Code.png" class="logo" />
-        <ul>
+        <ul class="mobile">
           <li><a href="#">Home</a></li>
           <li>
             <a
@@ -26,25 +26,34 @@
               >About Me</a
             >
           </li>
-          <li>
+          <li class="contact">
             <a href="https://t.me/sudhanshu_prasad_12" target="_blank">
-              Contact me
+              Contact me <span class="arrow01">&#8594;</span>
             </a>
           </li>
         </ul>
+        <div class="ham" onclick="Show(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </nav>
       <div class="text-box">
-        <p id="L1">I'M</p>
-        <h1 id="L2">SP Coder</h1>
-        <h3 id="L3">I Love To Code And Make Websites Using HTML And CSS.</h3>
+        <div class="Textcontent">
+          <p id="L1">I'M</p>
+          <h1 id="L2">SP Coder</h1>
+          <h3 id="L3">I Love To Code And Make Websites Using HTML And CSS.</h3>
+        </div>
 
         <div class="row">
-          <a href="https://github.com/sudhanshuprasad2002" target="_blank"
-            >Check Out My Profile <span>&#8594;</span>
-          </a>
-          <a href="https://t.me/sudhanshu_prasad_12" target="_blank"
-            >Connect With Me <span>&#8594;</span>
-          </a>
+          <div class="btn">
+            <a href="https://github.com/sudhanshuprasad2002" target="_blank"
+              >Check Out My Profile <span>&#8594;</span>
+            </a>
+            <a href="https://t.me/sudhanshu_prasad_12" target="_blank"
+              >Connect With Me <span>&#8594;</span>
+            </a>
+          </div>
           <span
             >You Can Contact Me From Here And <br />
             Also Browse My Portfolio Here.</span
@@ -64,5 +73,17 @@
         </a>
       </div>
     </div>
+
+    <script>
+      let menubar = document.querySelector(".mobile");
+      function Show(x) {
+        x.classList.toggle("change");
+        if (menubar.style.display == "flex") {
+          menubar.style.display = "none";
+        } else {
+          menubar.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>
